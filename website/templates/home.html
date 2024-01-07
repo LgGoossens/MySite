@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form method="POST">
+        <h3>Add Media</h3>
+
+        <h4>Add Playlist</h4>
+        <div class="form-group">
+            <label for="link">Link</label>
+            <input type="url" class="form-control" id="link" name="link" placeholder="Enter Link" required>
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="doAutoSync">Automatically Synchronize</label>
+            <input type="checkbox" class="form-control" id="doAutoSync" name="doAutoSync">
+        </div>
+        <div class="form-group">
+            <label for="doThumbnail">Download Thumbnail</label>
+            <input type="checkbox" class="form-control" id="doThumbnail" name="doThumbnail">
+        </div>
+        <div class="form-group">
+            <label for="doVideo">Download Video</label>
+            <input type="checkbox" class="form-control" id="doVideo" name="doVideo">
+        </div>
+        <div class="form-group">
+            <label for="doAudio">Download Audio</label>
+            <input type="checkbox" class="form-control" id="doAudio" name="doAudio">
+        </div>
+        <div class="form-group">
+            <label for="doCaption">Download Captions</label>
+            <input type="checkbox" class="form-control" id="doCaption" name="doCaption">
+        </div>
+        <div class="form-group">
+            <label for="dir">Save Location</label>
+            <input type="text" class="form-control" id="dir" name="dir" placeholder="Enter Server Dir">
+        </div>
+
+
+    </form>
+    <br />
+{% endblock %}
