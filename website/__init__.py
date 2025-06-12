@@ -11,9 +11,10 @@ DB_NAME = 'database.db'
 
 
 def create_app():
+    print(os.getcwd())
     app = Flask(__name__)
-    load_dotenv('rescources/.env')
-    app.config['SECRET_KEY'] = os.getenv('KEY')
+    load_dotenv('/resources/.env')
+    app.config['SECRET_KEY'] = "bRRJPqnYC1cbmGmJ9DQ8kJUgTOg6Ig"
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     db.init_app(app)
 
